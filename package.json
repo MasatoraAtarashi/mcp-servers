@@ -1,0 +1,20 @@
+{
+  "name": "mpc-servers",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MPC servers project",
+  "type": "module",
+  "workspaces": [
+    "src/*"
+  ],
+  "files": [],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "watch": "npm run watch --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "shx": "^0.3.4",
+    "typescript": "^5.8.2"
+  }
+}

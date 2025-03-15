@@ -1,0 +1,26 @@
+{
+    "name": "mpc-server-slack",
+    "version": "1.0.0",
+    "description": "MPC server for interacting with Slack",
+    "type": "module",
+    "bin": {
+        "mcp-server-slack": "dist/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc && shx chmod +x dist/*.js",
+        "prepare": "npm run build",
+        "watch": "tsc --watch"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "1.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22",
+        "shx": "^0.3.4",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.2"
+    }
+}
