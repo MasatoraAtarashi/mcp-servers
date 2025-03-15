@@ -1,0 +1,22 @@
+# .env
+.env
+.env.*
+
+# node_modules
+node_modules/
+
+# OSX
+.DS_Store
+
+# AWS CDK
+.cdk.staging
+cdk.out
+
+# tmp
+/tmp/
+!/tmp/.keep
+
+# バイナリ
+bin/
+build/
+dist/
