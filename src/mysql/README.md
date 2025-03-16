@@ -34,34 +34,12 @@ The server uses the following environment variables for database connection:
 
 To use this server with the Claude Desktop app, add the following configuration to the "mcpServers" section of your `claude_desktop_config.json`:
 
-### Local Execution
-
 ```json
 {
   "mcpServers": {
     "mysql": {
       "command": "node",
       "args": ["/path/to/dist/index.js"],
-      "env": {
-        "MYSQL_HOST": "localhost",
-        "MYSQL_PORT": "3306",
-        "MYSQL_USER": "root",
-        "MYSQL_PASSWORD": "your_password",
-        "MYSQL_DATABASE": "your_database"
-      }
-    }
-  }
-}
-```
-
-### Using npm Package
-
-```json
-{
-  "mcpServers": {
-    "mysql": {
-      "command": "npx",
-      "args": ["@masatoraatarashi/mcp-server-mysql"],
       "env": {
         "MYSQL_HOST": "localhost",
         "MYSQL_PORT": "3306",
@@ -89,15 +67,6 @@ npm run build
 ```bash
 # Set environment variables and run
 MYSQL_HOST=localhost MYSQL_PORT=3306 MYSQL_USER=root MYSQL_PASSWORD=your_password MYSQL_DATABASE=your_database node dist/index.js
-```
-
-## Running with npx
-
-After publishing the package to npm, you can run it using npx:
-
-```bash
-# Set environment variables and run with npx
-MYSQL_HOST=localhost MYSQL_PORT=3306 MYSQL_USER=root MYSQL_PASSWORD=your_password MYSQL_DATABASE=your_database npx @masatoraatarashi/mcp-server-mysql
 ```
 
 ## License

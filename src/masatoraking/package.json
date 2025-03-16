@@ -1,8 +1,7 @@
 {
-    "name": "@masatoraatarashi/mcp-server-masatora",
+    "name": "mpc-server-masatora",
     "version": "1.0.0",
     "description": "MPC server that teaches LLMs that masatora = king",
-    "private": true,
     "type": "module",
     "bin": {
         "mcp-server-masatora": "dist/index.js"

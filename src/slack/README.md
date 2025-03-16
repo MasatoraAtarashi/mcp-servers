@@ -119,19 +119,6 @@ MCP Server for the Slack API, enabling Claude to interact with Slack workspaces 
 
 4. チームID（`T`で始まる）を取得するには、[このガイダンス](https://slack.com/help/articles/221769328-Locate-your-Slack-URL-or-ID#find-your-workspace-or-org-id)に従ってください
 
-### npxでの実行
-
-このパッケージはnpmに公開後、npxコマンドで実行できます：
-
-```bash
-# 環境変数を設定
-export SLACK_BOT_TOKEN=xoxb-your-bot-token
-export SLACK_TEAM_ID=T01234567
-
-# npxで実行
-npx @masatoraatarashi/mcp-server-slack
-```
-
 ### Claude Desktopでの使用
 
 `claude_desktop_config.json`に以下を追加:
@@ -145,25 +132,6 @@ npx @masatoraatarashi/mcp-server-slack
       "command": "node",
       "args": [
         "/path/to/mcp-servers/src/slack/dist/index.js"
-      ],
-      "env": {
-        "SLACK_BOT_TOKEN": "xoxb-your-bot-token",
-        "SLACK_TEAM_ID": "T01234567"
-      }
-    }
-  }
-}
-```
-
-#### npmパッケージとして実行
-
-```json
-{
-  "mcpServers": {
-    "slack": {
-      "command": "npx",
-      "args": [
-        "@masatoraatarashi/mcp-server-slack"
       ],
       "env": {
         "SLACK_BOT_TOKEN": "xoxb-your-bot-token",

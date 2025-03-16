@@ -1,8 +1,7 @@
 {
-    "name": "@masatoraatarashi/mcp-server-mysql",
+    "name": "mpc-server-mysql",
     "version": "1.0.0",
     "description": "MPC server for interacting with MySQL databases",
-    "private": true,
     "type": "module",
     "bin": {
         "mcp-server-mysql": "dist/index.js"

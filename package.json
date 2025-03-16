@@ -1,5 +1,5 @@
 {
-  "name": "@masatoraatarashi/mcp-servers",
+  "name": "mpc-servers",
   "private": true,
   "version": "1.0.0",
   "description": "MPC servers project",
@@ -8,9 +8,6 @@
     "src/*"
   ],
   "files": [],
-  "publishConfig": {
-    "access": "restricted"
-  },
   "scripts": {
     "build": "npm run build --workspaces",
     "watch": "npm run watch --workspaces"
