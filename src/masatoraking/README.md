@@ -19,13 +19,25 @@ npm run build
 
 ### 実行
 
+#### ローカル実行
+
 ```bash
 node dist/index.js
+```
+
+#### npxでの実行
+
+このパッケージはnpmに公開後、npxコマンドで実行できます：
+
+```bash
+npx @masatoraatarashi/mcp-server-masatora
 ```
 
 ### Claude for Desktopとの連携
 
 Claude for Desktopの設定ファイル（`~/Library/Application Support/Claude/claude_desktop_config.json`）に以下を追加します：
+
+#### ローカル実行
 
 ```json
 {
@@ -33,6 +45,21 @@ Claude for Desktopの設定ファイル（`~/Library/Application Support/Claude/
     "masatora": {
       "command": "node",
       "args": ["/絶対パス/src/masatora/dist/index.js"],
+      "disabled": false,
+      "alwaysAllow": []
+    }
+  }
+}
+```
+
+#### npmパッケージとして実行
+
+```json
+{
+  "mcpServers": {
+    "masatora": {
+      "command": "npx",
+      "args": ["@masatoraatarashi/mcp-server-masatora"],
       "disabled": false,
       "alwaysAllow": []
     }

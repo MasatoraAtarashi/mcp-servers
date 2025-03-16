@@ -1,7 +1,8 @@
 {
-    "name": "mpc-server-slack",
+    "name": "@masatoraatarashi/mcp-server-slack",
     "version": "1.0.0",
     "description": "MPC server for interacting with Slack",
+    "private": true,
     "type": "module",
     "bin": {
         "mcp-server-slack": "dist/index.js"
